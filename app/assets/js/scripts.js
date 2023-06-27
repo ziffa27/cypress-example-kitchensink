@@ -45,6 +45,11 @@ $(() => {
     $(e.currentTarget).addClass('hidden')
   })
 
+  // Andrew add a class to show menu on hover
+  $('.dropdown-toggle').hover(() => {
+    $('li.active').addClass('open')
+  })
+
   // listen to contextmenu to demonstrate logic on right click command
   $('.rightclick-action-div').on('contextmenu', (e) => {
     $('.rightclick-action-input-hidden').removeClass('hidden').focus()
