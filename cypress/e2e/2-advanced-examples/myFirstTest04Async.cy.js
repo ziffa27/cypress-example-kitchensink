@@ -1,16 +1,10 @@
-const navbarvarText = Cypress.env('navbarText')
-context('My Fisrt Test', () => {
+context('My Fisrt Test - Async Cypress 04', () => {
 
   it('types into an email field', () => {
     cy.visit('/commands/actions')
     cy.findByPlaceholderText('Email').type('test@email.com')
-    cy.wait(2000).then(() => {
-      console.log('Waiting is finished!')
-      fetch('https://api.spacexdata.com/v3/missions')
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data)
-        })
-    })
+    cy.wait(5000)
+    console.log('Waiting is finished - JavaScrip run before Cypress so not good')
   })
+
 })

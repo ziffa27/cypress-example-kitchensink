@@ -1,4 +1,3 @@
-const navbarvarText = Cypress.env('navbarText')
 const token = 'abcd123'
 
 context('My Fisrt Test - Custom Commands 10', () => {

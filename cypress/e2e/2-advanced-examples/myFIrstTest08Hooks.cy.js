@@ -1,5 +1,4 @@
-// const navbarvarText = Cypress.env('navbarText')
-context('My Fisrt Test', () => {
+context('My Fisrt Test - Hooks Commonds 08', () => {
   before(() => {
     cy.request('https://api.spacexdata.com/v3/missions').its('body').should('length', 10)
   })

@@ -1,6 +1,3 @@
-const navbarvarText = Cypress.env('navbarText')
-const token = 'abcd123'
-
 context('My Fisrt Test - Github Actions 12', () => {
   beforeEach(() => {
     cy.visit('/commands/actions')

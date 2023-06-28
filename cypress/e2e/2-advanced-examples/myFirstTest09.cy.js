@@ -1,5 +1,4 @@
-const navbarvarText = Cypress.env('navbarText')
-context('My Fisrt Test', () => {
+context('My Fisrt Test - Fixtures 09', () => {
   beforeEach(() => {
     cy.fixture('example').then(function (data) {
       this.data = data

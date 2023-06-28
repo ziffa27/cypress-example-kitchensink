@@ -1,5 +1,4 @@
-const navbarvarText = Cypress.env('navbarText')
-context('My Fisrt Test', () => {
+context('My Fisrt Test - Assertions Commands 06', () => {
 
   it('shows an active class for the current page', () => {
     cy.visit('/commands/actions')

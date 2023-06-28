@@ -1,5 +1,4 @@
-const navbarvarText = Cypress.env('navbarText')
-context('My Fisrt Test', () => {
+context('My Fisrt Test - UI Commonds 07', () => {
 
   it('links to the actions page correctly', () => {
     cy.visit('/')
