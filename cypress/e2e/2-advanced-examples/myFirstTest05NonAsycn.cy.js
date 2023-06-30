@@ -4,13 +4,13 @@ context('My Fisrt Test - Non-Cypress Async Promises 05', () => {
     cy.visit('/commands/actions')
     cy.findByPlaceholderText('Email').type('test@email.com')
     cy.wait(5000).then(() => {
-      console.log('Waiting is finished')
+      console.log('5000ms waiting is finished')
       fetch('https://api.spacexdata.com/v3/missions')
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data)
-        })
-      console.log('Test are done')
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+      })
+      .then(console.log('All tests are done'))
     })
   })
 })
